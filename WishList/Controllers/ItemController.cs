@@ -19,7 +19,7 @@ namespace WishList.Controllers
 
         public IActionResult Index()
         {
-            return View("Index", _context.Items));
+            return View("Index", _context.Items);
         }
 
         [HttpGet]
