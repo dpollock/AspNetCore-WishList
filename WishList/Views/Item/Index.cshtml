@@ -1,0 +1,11 @@
+﻿@model System.Collections.Generic.List<WishList.Models.Item>
+
+<h1>Wishlist</h1>
+<a asp-action="Create">Add Item</a>
+
+<ul>
+    @foreach (var i in Model)
+    {
+        <li>@i.Description <a asp-action="Delete" asp-route-id="Id">Delete</a></li>
+    }
+</ul>
